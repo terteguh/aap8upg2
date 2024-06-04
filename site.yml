@@ -1,0 +1,20 @@
+
+# - name: kopi_kenangan
+#   hosts: all
+#   gather_facts: yes
+#   become: no
+#   roles:
+#     - role: kopi_kenangan
+
+- name: site
+  hosts: localhost
+  become: false
+  tasks:
+
+    - name: Add host
+      awx.awx.host:
+        name: "db.aap8upg.com"
+        description: "add database host"
+        inventory: "Demo Inventory"
+        state: present
+
