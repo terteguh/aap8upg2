@@ -1,0 +1,5 @@
+---
+collections:
+
+  - name: awx.awx
+    version: 24.4.0
