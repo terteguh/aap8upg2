@@ -3,3 +3,6 @@ collections:
 
   - name: awx.awx
     version: 24.4.0
+
+  - name: community.general
+    version: 9.0.1
